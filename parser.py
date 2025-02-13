@@ -11,11 +11,10 @@ def next_tag(s, cur_pos):
                 cur_tag += s[i]
                 i += 1
             i += 1  # To skip the '>' character
-            if cur_tag:
+            if cur_tag and not cur_tag.startswith('/'):  # Ensure it's an opening tag
                 return [cur_tag, i]  # Return the tag and the new position
         i += 1
     return [None, i]  # No more tags found
-
 
 def get_content_next(s, tag, pos):
     content = ''
@@ -28,8 +27,13 @@ def get_content_next(s, tag, pos):
             next_tag_info = next_tag(s, i)
             next_tag_name = next_tag_info[0]
             if next_tag_name:
-                # Stop capturing content when the next tag is encountered
-                if next_tag_name.startswith('</') or next_tag_name == f'<{tag}>':
+                # Skip closing tags (they start with '</')
+                if next_tag_name.startswith('</'):
+                    i = next_tag_info[1]  # Move past the closing tag
+                    continue
+                
+                # Stop capturing content when the next opening tag is encountered
+                if next_tag_name == f'{tag}':
                     break
             else:
                 break
@@ -37,7 +41,6 @@ def get_content_next(s, tag, pos):
             content += c
         i += 1
     return content
-
 
 # Example usage:
 start_pos = 0
@@ -47,9 +50,10 @@ while start_pos < len(s):
         tag = tag_info[0]
         start_pos = tag_info[1]
         
-        # If this is an opening tag, extract the content after it
+        # Only process opening tags (not closing tags)
         if not tag.startswith('</'):
             content = get_content_next(s, tag, start_pos)
             print(f'Tag: {tag}, Content: "{content}"')
     else:
         break
+
