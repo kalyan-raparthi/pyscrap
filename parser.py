@@ -1,25 +1,55 @@
-# HTML PASER FUNTIONS
+s = '''<h1>HELLO WORLD. </h1>'''
 
-\s = '''<h1>HELLO WORLD. </h1>'''
-
-def get_tag(s, cur_pos):
+def next_tag(s, cur_pos):
     i = cur_pos
-    while(i < len(s) - cur_pos):
+    while(i < len(s)):
         c = s[i]    
-        if (c == '<'):
+        if c == '<':  # Found the start of a tag
             i += 1
             cur_tag = ''
-            while(i < len(s) and s[i] != '>'):
+            while(i < len(s) and s[i] != '>'):  # Collect the tag until '>'
                 cur_tag += s[i]
                 i += 1
+            i += 1  # To skip the '>' character
             if cur_tag:
-                return [cur_tag, i]
+                return [cur_tag, i]  # Return the tag and the new position
         i += 1
+    return [None, i]  # No more tags found
 
-START_POS = 0
 
-tag_1 = get_tag(s, START_POS)
-tag_2 = get_tag(s, tag_1[1])
+def get_content_next(s, tag, pos):
+    content = ''
+    i = pos
+    while(i < len(s)):
+        c = s[i]
+        
+        # Look for the next opening tag (it starts with '<')
+        if c == '<':
+            next_tag_info = next_tag(s, i)
+            next_tag_name = next_tag_info[0]
+            if next_tag_name:
+                # Stop capturing content when the next tag is encountered
+                if next_tag_name.startswith('</') or next_tag_name == f'<{tag}>':
+                    break
+            else:
+                break
+        else:
+            content += c
+        i += 1
+    return content
 
-print(tag_1[0], tag_1[1])
-print(tag_2[0], tag_2[1])
+
+# Example usage:
+start_pos = 0
+while start_pos < len(s):
+    tag_info = next_tag(s, start_pos)
+    if tag_info[0]:
+        tag = tag_info[0]
+        start_pos = tag_info[1]
+        
+        # If this is an opening tag, extract the content after it
+        if not tag.startswith('</'):
+            content = get_content_next(s, tag, start_pos)
+            print(f'Tag: {tag}, Content: "{content}"')
+    else:
+        break
