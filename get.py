@@ -1,3 +1,4 @@
+import re
 from playwright.sync_api import sync_playwright
 
 def get_page(url):
@@ -5,13 +6,37 @@ def get_page(url):
         browser = p.chromium.launch(headless=True)
         page = browser.new_page()
         page.goto(url)
-
         content = page.locator('html').inner_text()
         browser.close()
         return content
 
+key = input('ENTER KEWORD: ')
+# urls ===============================================================================================================================
+urls = ['https://www.wikipedia.org/wiki/' + key, 'https://www.britannica.com/search?query=' + key, 'https://www.dictionary.com/browse/' + key, 'https://www.thesaurus.com/browse/' + key]
+data = []
 
-url = 'https://www.livemint.com/news'
+for url in urls:
+    doc = get_page(url)
+    data.append(doc)
+# data extraction =====================================================================================================================
 
-doc = get_page(url)
-print(doc)
+def clean_text(text):
+    text = re.sub(r'\[\d+\]', '', text) # remove reference numbers
+    text = re.sub(r'\n+', '\n', text) # remove extra newlines
+    text = re.sub(r'\n', ' ', text) # replace newline with space
+    text = re.sub(r'\s+', ' ', text) # remove extra spaces
+    text = re.sub(r'^\s+|\s+$', '', text) # remove leading and trailing spaces
+    text = re.sub(r'\s*\.\s*', '.\n', text) # add newline after fullstop
+    text = re.sub(r'\s*,\s*', ', ', text) # add space after comma
+    text = re.sub(r'\s*;\s*', '; ', text) # add space after semicolon
+    text = re.sub(r'\s*:\s*', ': ', text) # add space after colon
+    text = re.sub(r'\s*\?\s*', '? ', text) # add space after question mark
+    text = re.sub(r'\s*!\s*', '! ', text) # add space after exclamation mark
+    text = re.sub(r'\s*"\s*', '" ', text) # add space after double quote
+    text = re.sub(r'\s*\'\s*', "' ", text) # add space after single quote
+    text = re.sub(r'\s*-\s*', '- ', text) # add space after hyphen
+    text = re.sub(r'\s*–\s*', '– ', text) # add space after en dash
+    text = re.sub(r'\s*—\s*', '— ', text) # add space after em dash
+    text = re.sub(r'\s*…\s*', '… ', text) # add space after ellipsis
+    text = re.sub(r'\s*\(\s*', ' (', text) # add space before opening parenthesis``
+    return text
