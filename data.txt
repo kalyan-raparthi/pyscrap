@@ -24,160 +24,37 @@ ICC
  
 
 
-HOME
-HONOURS GUIDELINES
-HONOURS CURRICULA
-MINOR IN ENGINEERING GUIDELINES
-MINOR IN ENGINEERING CURRICULA
-Dept. Honours/Minor Co-ordinators
-HMP Progress
-  
-
-ADDITIONAL LEARNING LEADING TO
-UG DEGREE WITH HONOURS / MINOR IN ENGINEERING
-
-( In line with the provisions laid down in AICTE Model Curriculum for Undergraduate Degree Course in Engineering & Technology, January 2018)
+AICTE Files
+UGC Files
 
 
 
 
-Every student has specific abilities, interests, career goals and wishes to enhance his/her academic learning experience. Employers look for graduates with different combinations of competencies with T-shaped skills. Hence, opportunities for additional learning are the major requirement for students to bridge the industry-academia gap.
-
-At KITSW, to support students’ additional learning needs, the following provisions are made in URR18 curriculum:
-
-HONOURS
-          MINOR IN ENGINEERING
-
-A student will be eligible to get UG Degree with Honours in one’s own discipline and/or additional Minor in Engineering in a discipline other than one’s own, if he/she completes an additional 20 credits, in addition to basic degree 160 credit requirement. These additional 20 credits could be acquired through MOOCs.
-
-Interested KITSW students can earn required additional credits leading to Honours/Minor in Engineering. Detailed guidelines for the additional learning are here.
-
-HONOURS
-          MINOR IN ENGINEERING
-
-	
+AICTE Files
 
 
-Professor In-charge:
 
+    Willingness for conduct of online Common University Entrance Test (CUET) at your institution/University.
 
-Dr. B.Rama Devi
-Professor,   Dept. of ECE
-Email : brd.ece@kitsw.ac.in    Mobile: +91 9032001167
+    Revised Academic Calendar for AY 2021-22
 
-	
-	
+    AICTE newsletter for the 2nd qtr (Apri 1, 2021 to June 30, 2021)
 
+    PDF: AICTE newsletter for the 2nd qtr (Apri 1, 2021 to June 30, 2021)
 
-Faculty In-charge:
+    COVID Behaviour Change Campaign
 
-
-Sri S.ANIL KUMAR
-Assistant Professor of Mechanical Engineering
-Email : sak.me@kitsw.ac.in    Mobile: +91 9290678008
-
-	
-
-
-Copyright © 2013 Visitor No:
-Updated on 26/03/2025
-Designed and Developed by www.iYuga.co.in
-Best viewed in browser Internet Explorer 9 or above with screen_Resolution 1280X1024
-
-	
-Welcome, Guest
-Home
-		
-	
-Log in to you KITS Warangal CMS account.
-
-Sign In
-User Name:*	
-
-Password:*	
-
-	Forgot your password?
-Secure Lock	
+    CORONA Hoarding
 
 
 
 
-    
- 
-CourseWeb
-
-
-CMS
-
-
-Domain mail
-
-
-Microsoft.Teams
-
-
-Anti Ragging
-UGC-Autonomous
-Affiliations
-Accreditation
-Mandatory Disclosure
-Strategic Plan
-Grievance Redressal
-Anti Drug
-ICC
- 
-Mile Stones
-Contact Person
-CORE VALUES OF THE INSTITUTE
-
-We value Integrity, Diversity, Excellence, Accountability and Quality (IDEAQ)....
-
- 
-
-1.
-	INTEGRITY	
-
-:
-
-	We are commited to ethical and responsible behavior in our actions and to eveloping the same commitment in our students
-
-2.
-	DIVERSITY	
-
-:
-
-	We believe that our similarities and differences are opportunities for stablishing a common bond and strengthening the institute
-
-3.
-	EXCELLENCE	
-
-:
-
-	We strive to develop, pursue higher standards and are committed to provide the best educational experience possible to every student
-
-4.
-	ACCOUNTABILITY	
-
-:
-
-	We are committed to ensuring that all members of KITSW are accountable for their work in support of Institute, its Vision and Mission
-
-5.
-	QUALITY	
-
-:
-
-	We provide educational programmes that lead to acquisition of knowledge and skills necessary to achieve information literacy, career advancement, personal enrichment, leadership and service to community
-
- 
-
-We teach … we learn... we interact… we nurture… we grow responsible citizens for tomorrow…
 
 
 
 
 Copyright © 2013 Visitor No:
-Updated on 12/10/2023
+Updated on 23/10/2024
 Designed and Developed by www.iYuga.co.in
 Best viewed in browser Internet Explorer 9 or above with screen_Resolution 1280X1024
 
@@ -320,4 +197,204 @@ Copyright © 2013 Visitor No:
 Updated on 21/03/2025
 Designed and Developed by www.iYuga.co.in
 Best viewed in browser Internet Explorer 9 or above with screen_Resolution 1024X1280
+
+  
+ 
+CourseWeb
+
+
+CMS
+
+
+Domain mail
+
+
+Microsoft.Teams
+
+
+Anti Ragging
+UGC-Autonomous
+Affiliations
+Accreditation
+Mandatory Disclosure
+Strategic Plan
+Grievance Redressal
+Anti Drug
+ICC
+ 
+
+
+2024-25
+2023-24
+2022-23
+2021-22
+
+
+Student's Notice Board
+
+
+	
+  21.03.2025:
+	
+Circular-423- Attention Students of B. Tech VI Semester (CE, CSM, ECE, ECI & EEE) - Computer Based Test for MINOR-2 Exam in QALR (U18TP601) course.
+
+
+	
+  21.03.2025:
+	
+Circular-422- End Semester Laboratory Examination (ESE) – IV and VI Semester PSD Labs.
+
+
+	
+  24.02.2025:
+	
+Circular-407- Attention! B.Tech. - II Semester students - Revised timings for departure of Buses from the institute – To enable Practicum and SEA/SAA Activities.
+
+
+	
+  03.03.2025:
+	
+Circular-141 - NBA Expert Team Visit.
+
+
+	
+  05.02.2025:
+	
+Circular-104 - Attend ETS sessions through Laptop - Purchase of Laptop - An essential learning instrument.
+
+
+	
+  10.02.2025:
+	
+Circular-103 - Practice Sessions on NeoPAT Platform.
+
+
+	
+  22.01.2025:
+	
+Central Library Notice to all the SC/ST category (Convener Quota fee reimbursement) students of B.Tech I-Year II Semester.
+
+
+	
+  22.01.2025:
+	
+Guest Lecture on 23.01.2025 (Thursday) @ 11.30 am on "Management 4.0 Technology Management and Case Studies" by Prof. AR Aryasri, Former Director, School of Management Studies, JNTU, Hyderabad.
+
+
+	
+  07.01.2025:
+	
+MBA Student Development Programme(SDP) on 08.01.2025 (Wednesday) @ 10.00 am on "Artificial Intelligence Tools for Career Growth in Management Profession" by Prof. Rama Krishna Yelamanchi, From IPE(Institute of Public Enterprise), Hyderabad.
+
+
+	
+  22.11.2024:
+	
+Expert Talk – 9 on 23.11.2024 (Saturday) @ 3.00 pm on "Professional Responsibilities and Ethics" by Dr. S. Shanthagomathi Karthikayini, Founder and CEO - KITE.
+
+
+	
+  19.10.2024:
+	
+Expert Talk – 5 on 19.10.2024: (Saturday) @ 7.00 pm on "A Short cut to Distinction in Life" by Sri Rajesh Murthy Corporate Trainer & Business Consultant
+
+
+	
+  14.10.2024:
+	
+ESE-Fee Notification for UG & PG-NOV-2024 (14.10.24)
+
+
+	
+  30.09.2024:
+	
+Central Library - Notice to SC/ST students of B.Tech. II year lateral entry.
+
+
+	
+  27.09.2024:
+	
+Expert Talk – 3 on 28.09.2024 (Saturday) @ 3.00 pm
+
+
+	
+  21.09.2024:
+	
+Central Library - Attrention all the I year B.Tech Students.
+
+
+	
+  19.09.2024:
+	
+Expert Talk – 2 on "Innovating Through Technical Excellence" by Sri Ganesh Iyer Deputy Manager Training, Centum Learning Limited & Co-Founder, Entreesphere on 21.09.2024 (Saturday) @ 7.00pm.
+
+
+	
+  19.09.2024:
+	
+Circular - Expert Talk on "Indo-American Artificial Heart Programme" by IAAHP Team, KITSW.
+
+
+	
+  19.09.2024:
+	
+Central Library - Notice to SC/ST students of I year B.Tech.
+
+
+	
+  13.09.2024:
+	
+B.Tech. I Semester - Suspension of PRACTICUM sessions scheduled on Saturday 14.09.2024, due to the ongoing MSE-1 of B.Tech. III, V & VII semesters.
+
+
+	
+  16.08.2024:
+	
+National Space Day - NASA Space Apps Challenge Hackathon during August 23-24, 2024.
+
+
+	
+  12.08.2024:
+	
+Ragging - Involving in any act of in - Asking personal information / Bio-data of a fellow student - is an act of ragging - A strict no to fresher's party - It comes under the purview of Ragging.
+
+
+	
+  31.07.2024:
+	
+Anti Drug Sensitization Program - Address by Sri Ambar Kishor Jha, Commissioner of Police, Warangal on 01.08.2024.
+
+
+	
+  22.07.2024:
+	
+Central Library - All students of II, III & IV students for books return & issue information for the academic year 2024-25
+
+
+	
+  22.07.2024:
+	
+Central Library - Notice to SC/ST students of II, III and IV year B.Tech.
+Copyright © 2013 Visitor No:
+Updated on 21/03/2025
+Designed and Developed by www.iYuga.co.in
+Best viewed in browser Internet Explorer 9 or above with screen_Resolution 1280X1024
+
+	
+Welcome, Guest
+Home
+		
+	
+Log in to you KITS Warangal CMS account.
+
+Sign In
+User Name:*	
+
+Password:*	
+
+	Forgot your password?
+Secure Lock	
+
+
+
 
