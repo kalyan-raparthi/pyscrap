@@ -1,48 +1,59 @@
-import re
 from playwright.sync_api import sync_playwright
 
-db = []
+PAGE_LIMIT = 10
+LINKS = []
+DATA  = []
+url = 'https://www.kitsw.ac.in/'
 
-def get_page(url):
+def get_links(url):
+    print("getting page from" + url)
+    with sync_playwright() as p:
+        browser = p.chromium.launch(headless=True)
+        page = browser.new_page()
+        
+        page.goto(url)
+        content = page.eval_on_selector_all('a', "elements => elements.map(e => e.href)")
+        
+        browser.close()
+        return content
+
+def get_page(url, element_type):
     print("getting page from" + url)
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True)
         page = browser.new_page()
         page.goto(url)
-        content = page.locator('p').all_inner_texts()
+        content = page.locator(element_type).all_inner_texts()
         browser.close()
         return content
 
-# key = input('ENTER KEWORD: ')
-key = 'bull'
-# urls ==================================================================================================
-urls = ['https://www.wikipedia.org/wiki/' + key, 'https://www.britannica.com/search?query=' + key]
-# 'https://www.dictionary.com/browse/' + key, 'https://www.thesaurus.com/browse/' + key]
-data = []
+def add_data(link):
+    data = get_page(link, 'p')
+    print(data) 
+    DATA.append(data)
 
-for url in urls:
-    doc = get_page(url)
-    data.append(doc)
-# data extraction =======================================================================================
+doc = get_page(url, 'p')
+ahrefs = set(get_links(url))
+# print(ahrefs)
 
-def clean_text(text):
-    text = re.sub(r'\[\d+\]', '', text) # remove reference numbers
-    text = re.sub(r'\([^)]*\)', '', text) # remove words inside parenthesis
-    
-    text = re.sub(r'\n+', '\n', text) # remove extra newlines
-    text = re.sub(r'\n', ' ', text) # replace newline with space
-    text = re.sub(r'\s+', ' ', text) # remove extra spaces
-    text = re.sub(r'^\s+|\s+$', '', text) # remove leading and trailing spaces
-    return text
+for link in ahrefs:
+    try:
+        print(PAGE_LIMIT)
+        if PAGE_LIMIT == 0: break
+        add_data(link)
+        PAGE_LIMIT -= 1
+    except:
+        pass
 
+# file writing =======================================================================================
 
-for paragraphs in data:
-    for paragraph in paragraphs:
-        paragraph = clean_text(paragraph)
-        sentences = re.split(r'(?<=[.!?]) +', paragraph)
-        for sentence in sentences:
-            db.append(sentence)
+# print(DATA)
 
-for sentence in db:
-    print(sentence)
+file = open('data.txt', 'a')
 
+print('-----------------------------------------------------------------------------------')
+print(len(DATA))
+for x in DATA:
+    print(x)
+    # file.write(d)
+file.close()
